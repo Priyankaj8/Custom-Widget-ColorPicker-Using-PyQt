@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QWidget, QApplication, QSlider, QLabel, QHBoxLayout, QVBoxLayout, QColorDialog
+from PyQt6.QtWidgets import QWidget, QApplication, QSlider, QLabel, QHBoxLayout, QVBoxLayout, QColorDialog, QStyleFactory
 from PyQt6.QtGui import QColor
 from PyQt6.QtCore import Qt
 import sys
@@ -98,6 +98,7 @@ class MainWindow(QWidget):
 
 
 app = QApplication(sys.argv)
+app.setStyle('Fusion')
 window =  MainWindow()
 window.show()
 app.exec()
